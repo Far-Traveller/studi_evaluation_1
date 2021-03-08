@@ -1,23 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <!-- Head -->
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width">
-    <link rel="icon" type="png" href="logo-tab.png">
-    <title>D&D - with Friends</title>
-    <link rel="stylesheet" href="bootstrap.min.css"> 
-    <link rel="stylesheet" href="style.css">
-  </head>
-  
-  <!-- Body -->
-  <body>
+    <!-- Head -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="png" href="assets/logo.png">
+        <title>D&D - with Friends</title>
 
-    <!-- Navbar -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+        <!-- CDN Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     
+        <link rel="stylesheet" href="stylesheets/style.css">
+    </head>
+
+    <!-- Body -->
+    <body>
+        <!-- Navbar -->
+        <header>
+            <div class="inner-width">
+                <a href="#" class="logo"><img src="assets/logo_nav.png" alt=""></a>
+                <i class="menu-toggle-btn fas fa-bars"></i>
+                <nav class="navigation-menu">
+                    <a href="#"><i class="fas fa-home home"></i>Accueil</a>
+                    <a href="#"><i class="fas fa-calendar-alt other"></i>Évènement</a>
+                    <a href="#"><i class="fas fa-headset other"></i>Contact</a>
+                </nav>
+            </div>
+        </header>
 
 
+        <main>
+            <article>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, officiis labore! Aperiam nam magnam labore et odio doloremque voluptates excepturi pariatur temporibus commodi, officiis aspernatur error aliquid explicabo ratione vel.
+                </p>
+            </article>
 
+        </main>
 
-
+        <!-- CDN JQUERY ET BOOTSTRAP -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(".menu-toggle-btn").click(function () {
+                $(this).toggleClass("fa-times");
+                $(".navigation-menu").toggleClass("active");
+            });
+        </script>
+    </body>
 </html>
