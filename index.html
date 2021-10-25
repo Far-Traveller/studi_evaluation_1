@@ -37,10 +37,13 @@
             <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarText">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#welcome">Accueil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Évènements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -51,6 +54,37 @@
 
     <!-- Main -->
     <main>
+        <section id="welcome"></section>
+
+        <section id="presentation"></section>
+
+        <section id="event"></section>
+
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <p class="contact-text">Pour toute question ou demande, n'hésitez pas à nous contacter, nous serons heureux de vous répondre :)</p>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nameForContact">Nom</label>
+                        <input type="text" class="form-control" id="nameForContact" placeholder="Coptère">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="nameForContact">Prénom</label>
+                    <input type="text" class="form-control" id="nameForContact" placeholder="Lily">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="emailForContact">Adresse mail</label>
+                    <input type="email" class="form-control" id="emailForContact" placeholder="lily.coptere@dnd.fr">
+                </div>
+                <div class="form-group">
+                    <label for="textForContact">Votre message</label>
+                    <textarea class="form-control" id="textForContact" rows="3"></textarea>    
+                </div>
+                <button type="submit" class="btn btn-dark button">Envoyer</button>
+            </form>
+        </section>
 
     </main>
     <!-- End of Main -->
