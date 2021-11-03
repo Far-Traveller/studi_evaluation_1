@@ -87,35 +87,47 @@
             </div>
         </section>
 
-        <section id="event">
-
+        <section id="event" class="grid">
+            <div class="event-text">
+                <h2>Évènements</h2>
+                <p class="leading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi atque, eius
+                    beatae dolore ducimus hic, mollitia vero praesentium nisi ad ipsam reprehenderit quibusdam animi
+                    commodi nihil aliquid, tenetur voluptatem. Facilis.
+                </p>
+                <a class="btn btn-dark button" href="#">En savoir plus</a>
+            </div>
+            <div class="event-img">
+                <img src="assets/events-img1.jpg" alt="évènements">
+            </div>
         </section>
 
         <section id="contact">
-            <h2>Contactez-nous</h2>
-            <p class="contact-text">Pour toute question ou demande, n'hésitez pas à nous contacter, nous serons heureux
-                de vous répondre :)</p>
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="nameForContact">Nom</label>
-                        <input type="text" class="form-control" id="nameForContact" placeholder="Coptère">
+            <div class="container">
+                <h2>Contactez-nous</h2>
+                <p class="contact-text">Pour toute question ou demande, n'hésitez pas à nous contacter, nous serons
+                    heureux de vous répondre :)</p>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nameForContact">Nom</label>
+                            <input type="text" class="form-control" id="nameForContact" placeholder="Coptère">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="nameForContact">Prénom</label>
+                            <input type="text" class="form-control" id="nameForContact" placeholder="Lily">
+                        </div>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="nameForContact">Prénom</label>
-                        <input type="text" class="form-control" id="nameForContact" placeholder="Lily">
+                    <div class="form-group">
+                        <label for="emailForContact">Adresse mail</label>
+                        <input type="email" class="form-control" id="emailForContact" placeholder="lily.coptere@dnd.fr">
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="emailForContact">Adresse mail</label>
-                    <input type="email" class="form-control" id="emailForContact" placeholder="lily.coptere@dnd.fr">
-                </div>
-                <div class="form-group">
-                    <label for="textForContact">Votre message</label>
-                    <textarea class="form-control" id="textForContact" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark button">Envoyer</button>
-            </form>
+                    <div class="form-group">
+                        <label for="textForContact">Votre message</label>
+                        <textarea class="form-control" id="textForContact" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark button">Envoyer</button>
+                </form>
+            </div>
         </section>
 
     </main>
