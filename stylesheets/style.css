@@ -1,14 +1,41 @@
+/* variables */
+:root{
+  --primary: rgb(62, 67, 73);
+  --titles: rgb(236, 236, 236);
+  --paragraph: rgb(209, 209, 209);
+}
+
+/* base styles */
 #navbar-logo {
   width: 125px;
 }
 
-/* variables */
-
-/* reset */
-
-/* base styles */
+body{
+  background-color: var(--primary);
+  /* overflow-x: hidden; /* utile ??? */
+}
 
 /* fonts */
+h1,h2,h3 {
+  color: var(--titles);
+  font-weight: normal;
+}
+
+p,a, label {
+  color: var(--paragraph);
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.6em
+}
+
+h3 {
+  font-size: 1.2em;
+}
 
 /* mobile styles */
 
@@ -20,9 +47,17 @@
 /* large tablets & laptop styles */
 @media screen and (min-width: 960px){
 
+  body{
+    font-size: 18px;
+  }
+
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px){
+
+  body{
+    font-size: 20px;
+  }
 
 }
