@@ -12,8 +12,9 @@
 
 body{
   background-color: var(--primary);
-  /* overflow-x: hidden; /* utile ??? */
+  overflow-x: hidden; /* utile ??? */
 }
+
 
 /* fonts */
 h1,h2,h3 {
@@ -23,6 +24,7 @@ h1,h2,h3 {
 
 p,a, label {
   color: var(--paragraph);
+  font-size: 1em;
 }
 
 h1 {
@@ -34,10 +36,61 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 0.8em;
 }
 
 /* mobile styles */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  box-sizing: border-box;
+  background-color: blue;
+}
+#welcome{
+  background-image: url(../assets/welcome-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 20px;
+}
+#presentation{
+  padding: 30px 20px;
+}
+#presentation .container {
+  text-align: center;
+}
+.games a {
+  grid-column: 1/9;
+  margin: 10px 0;
+  display: flex;
+  background-color: brown;
+}
+.games a * {
+  margin: 0 10px;
+  max-width: 30%;
+  align-self: center;
+}
+
+.games h3 {
+  color: rgb(212, 201, 201);
+}
+
+#event{
+  background-image: url(../assets/events-img1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 20px;
+}
+
+#event p {
+  color: var(--primary);
+}
+
+#contact{
+  padding: 30px 20px;
+}
 
 /* small tablet styles */
 @media screen and (min-width: 620px){
