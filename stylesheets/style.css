@@ -12,7 +12,6 @@
 
 body{
   background-color: var(--primary);
-  overflow-x: hidden; /* utile ??? */
 }
 
 /* fonts */
@@ -115,12 +114,16 @@ h2:after {
   overflow: hidden;
   }
 
-.carousel-item  img {
+.carousel-item img {
   max-width: 100%;
   height: auto;
   }
 
 #contact{
+  background-image: url(../assets/contact-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 30px 20px;
 }
 
