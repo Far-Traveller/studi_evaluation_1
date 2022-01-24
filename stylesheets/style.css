@@ -15,7 +15,6 @@ body{
   overflow-x: hidden; /* utile ??? */
 }
 
-
 /* fonts */
 h1,h2,h3 {
   color: var(--titles);
@@ -45,8 +44,8 @@ h3 {
   grid-template-columns: repeat(8, 1fr);
   gap: 10px;
   box-sizing: border-box;
-
 }
+
 #welcome{
   background-image: url(../assets/welcome-img.png);
   background-size: cover;
@@ -55,41 +54,46 @@ h3 {
   padding: 30px 20px;
   text-align: center;
 }
+
 #presentation{
   padding: 30px 20px;
 }
+
 #presentation .container {
   text-align: center;
 }
+
 .games a {
   grid-column: 1/9;
   margin: 10px 0;
   display: flex;
 }
+
 .games a * {
   margin: 0 10px;
   max-width: 50%;
   align-self: center;
 }
 
-.games h3 {
-  color: rgb(212, 201, 201);
-}
-
 #event{
-  background-image: url(../assets/events-img1.jpg);
+  background-image: url(../assets/events-img1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 30px 20px;
 }
 
-#event p {
-  color: var(--primary);
+.event-text {
+  grid-column: 1/7;
+  text-align: center;
 }
 
 #contact{
   padding: 30px 20px;
+}
+
+.contact-text, .contact-title{
+  text-align: center;
 }
 
 /* small tablet styles */
