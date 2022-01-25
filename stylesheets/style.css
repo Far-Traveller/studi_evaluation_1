@@ -14,6 +14,10 @@ body{
   background-color: var(--primary);
 }
 
+.btn {
+  color: var(--primary);
+}
+
 /* fonts */
 h1,h2,h3 {
   color: var(--titles);
@@ -145,7 +149,7 @@ h2:after {
     padding: 2.5% 0;
   }
 
-  
+
   
 }
 
