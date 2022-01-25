@@ -26,7 +26,7 @@ p,a, label {
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 h2 {
@@ -69,6 +69,10 @@ h2:after {
   text-align: center;
 }
 
+.welcome-div {
+  padding: 10% 0;
+}
+
 #presentation{
   padding: 30px 20px;
 }
@@ -105,19 +109,19 @@ h2:after {
 #carousel {
   padding: 30px 0;
   text-align: center;
- 
+
 }
 
 .carousel-item {
   height: 270px;
   float: left;
   overflow: hidden;
-  }
+}
 
 .carousel-item img {
   max-width: 100%;
   height: auto;
-  }
+}
 
 #contact{
   background-image: url(../assets/contact-img.png);
@@ -133,7 +137,16 @@ h2:after {
 
 /* small tablet styles */
 @media screen and (min-width: 620px){
+  h1 {
+    font-size: 3em;
+  }
 
+  .welcome-text {
+    padding: 2.5% 0;
+  }
+
+  
+  
 }
 
 /* large tablets & laptop styles */
