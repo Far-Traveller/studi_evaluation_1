@@ -6,7 +6,7 @@
 }
 
 /* base styles */
-#navbar-logo {
+#navbar-logo{
   width: 125px;
 }
 
@@ -14,34 +14,34 @@ body{
   background-color: var(--primary);
 }
 
-.btn {
+.btn{
   color: var(--primary);
 }
 
 /* fonts */
-h1,h2,h3 {
+h1,h2,h3{
   color: var(--titles);
   font-weight: normal;
 }
 
-p,a, label {
+p,a, label{
   color: var(--paragraph);
   font-size: 1em;
 }
 
-h1 {
+h1{
   font-size: 2em;
 }
 
-h2 {
+h2{
   font-size: 1.6em;
 }
 
-h3 {
+h3{
   font-size: 1.1em;
 }
 
-h2:before, h2:after {
+h2:before, h2:after{
   content:'';
   display:inline-block;
   vertical-align: middle;
@@ -49,10 +49,10 @@ h2:before, h2:after {
   height: 1px;
   background: var(--titles);
 }
-h2:before {
+h2:before{
   margin-right: .3rem;
 }
-h2:after {
+h2:after{
   margin-left: .3rem;
 }
 
@@ -73,7 +73,7 @@ h2:after {
   text-align: center;
 }
 
-.welcome-div {
+.welcome-div{
   padding: 10% 0;
 }
 
@@ -81,17 +81,17 @@ h2:after {
   padding: 30px 20px;
 }
 
-#presentation .container {
+#presentation .container{
   text-align: center;
 }
 
-.games a {
+.games a{
   grid-column: 1/9;
   margin: 10px 0;
   display: flex;
 }
 
-.games a * {
+.games a *{
   margin: 0 10px;
   max-width: 50%;
   align-self: center;
@@ -105,24 +105,23 @@ h2:after {
   padding: 30px 20px;
 }
 
-.event-text {
+.event-text{
   grid-column: 1/7;
   text-align: center;
 }
 
-#carousel {
+#carousel{
   padding: 30px 0;
   text-align: center;
-
 }
 
-.carousel-item {
+.carousel-item{
   height: 270px;
   float: left;
   overflow: hidden;
 }
 
-.carousel-item img {
+.carousel-item img{
   max-width: 100%;
   height: auto;
 }
@@ -141,16 +140,31 @@ h2:after {
 
 /* small tablet styles */
 @media screen and (min-width: 620px){
-  h1 {
+  h1{
     font-size: 3em;
   }
 
-  .welcome-text {
+  .welcome-text, .presentation-text{
     padding: 2.5% 0;
   }
 
-
+  #presentation{
+    margin-top: 20px;
+  }
   
+  .games a{
+    grid-column: span 4;
+    display: block;
+    margin: 20px 0;
+  }
+  .games a:last-child{
+    grid-column: 3/7;
+  }
+  .games a *{
+    max-width: 60%;
+    margin: 10px 20%;
+  }
+
 }
 
 /* large tablets & laptop styles */
