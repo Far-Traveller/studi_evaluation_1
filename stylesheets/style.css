@@ -151,7 +151,6 @@ h2:after{
   #presentation{
     margin-top: 20px;
   }
-  
   .games a{
     grid-column: span 4;
     display: block;
@@ -163,6 +162,20 @@ h2:after{
   .games a *{
     max-width: 60%;
     margin: 10px 20%;
+  }
+
+  #event{
+    height: 400px;
+  }
+  .event-text{
+    grid-column: 1/6;
+    text-align: center;
+  }
+  .event-text h2{
+    margin-top: 20px;
+  }
+  .event-text p{
+    padding: 30px 0;
   }
 
 }
