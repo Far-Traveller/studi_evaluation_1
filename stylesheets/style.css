@@ -143,33 +143,38 @@ h2:after{
 #next-events{
   padding: 30px 20px;
 }
-
-#next-events .container{
+#next-events .container, #previous-events .container{
   text-align: center;
 }
-
-.next-events-list{
+.events-list{
   margin-bottom: 20px;
 }
-
-.next-events-list a{
+.events-list a{
   grid-column: 1/9;
   margin: 10px 0;
   display: flex;
 }
-
-.next-events-list a img, .next-events-list a div{
-  margin: 0 10px;
+.events-list a *:not(h3, p){
+  margin: 0 5%;
   max-width: 50%;
   align-self: center;
 }
-
+.next-events-p{
+  display: none;
+}
 .town{
   margin-bottom: 0;
 }
 
-.next-events-p{
-  display: none;
+#previous-events{
+  padding: 30px 20px;
+  background-color: var(--paragraph);
+}
+#previous-events *{
+  color: var(--primary);
+}
+#previous-events h2:before, #previous-events h2:after{
+  background: var(--primary);
 }
 
 
