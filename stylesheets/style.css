@@ -138,6 +138,16 @@ h2:after{
 .contact-btn{
   text-align: center;
 }
+footer div{
+  text-align: center;
+}
+footer div i{
+  color: var(--paragraph);
+  margin: 0 5px;
+}
+footer div p{
+  margin: 0;
+}
 
 /**** event.html ****/
 #next-events{
