@@ -1,11 +1,11 @@
-/* variables */
+/************** variables **************/
 :root{
   --primary: rgb(62, 67, 73);
   --titles: rgb(236, 236, 236);
   --paragraph: rgb(209, 209, 209);
 }
 
-/* base styles */
+/************** base styles **************/
 #navbar-logo{
   width: 125px;
 }
@@ -18,7 +18,7 @@ body{
   color: var(--primary);
 }
 
-/* fonts */
+/************** fonts **************/
 h1,h2,h3{
   color: var(--titles);
   font-weight: normal;
@@ -56,7 +56,7 @@ h2:after{
   margin-left: .3rem;
 }
 
-/* mobile styles */
+/************** mobile styles **************/
 .grid{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -139,7 +139,7 @@ h2:after{
   text-align: center;
 }
 
-/* event.html */
+/**** event.html ****/
 #next-events{
   padding: 30px 20px;
 }
@@ -155,7 +155,7 @@ h2:after{
   display: flex;
 }
 .events-list a *:not(h3, p){
-  margin: 0 5%;
+  margin: auto;
   max-width: 50%;
   align-self: center;
 }
@@ -164,6 +164,7 @@ h2:after{
 }
 .town{
   margin-bottom: 0;
+  font-style: italic;
 }
 
 #previous-events{
@@ -177,8 +178,7 @@ h2:after{
   background: var(--primary);
 }
 
-
-/* small tablet styles */
+/************** small tablet styles **************/
 @media screen and (min-width: 620px){
   h1{
     font-size: 3em;
@@ -187,10 +187,10 @@ h2:after{
   .welcome-text, .presentation-text{
     padding: 2.5% 0;
   }
-
-  #presentation, #carousel, #contact{
-    margin-top: 20px;
+  #welcome, #presentation, #event, #carousel{
+    margin-bottom: 20px;
   }
+
   .games a{
     grid-column: span 4;
     display: block;
@@ -221,9 +221,25 @@ h2:after{
     margin-bottom: 30px;
   }
 
+  /**** event.html ****/
+  #next-events{
+    margin-bottom: 20px;
+  }
+  #previous-events{
+    padding-bottom: 20px;
+  }
+  .next-events-text, .previous-events-text{
+    padding: 2.5% 0;
+  }
+  .next-events-p{
+    display: block;
+    margin-bottom: 8px;
+  }
+ 
+
 }
 
-/* large tablets & laptop styles */
+/************** large tablets & laptop styles **************/
 @media screen and (min-width: 960px){
   body{
     font-size: 18px;
@@ -258,7 +274,7 @@ h2:after{
 
 }
 
-/* desktop styles */
+/************** desktop styles **************/
 @media screen and (min-width: 1200px){
 
   body{
