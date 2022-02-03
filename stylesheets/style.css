@@ -235,8 +235,6 @@ h2:after{
     display: block;
     margin-bottom: 8px;
   }
- 
-
 }
 
 /************** large tablets & laptop styles **************/
@@ -272,6 +270,40 @@ h2:after{
     grid-column: 2/5;
   }
 
+  /**** events.html ****/
+  .events-list a{
+    grid-column: span 4;
+    display: block;
+    margin: 5px 0;
+  }
+  .events-list a *{
+    max-width: 60%;
+    margin: 10px 20%;
+  }
+  .events-list a img {
+    max-width: 70%;
+    margin-bottom: 10px;
+  }
+  .events-list a div{
+    margin: 0;
+    max-width: 100%;
+    align-self: center;
+  }
+  .next-events-list a:nth-child(1), .next-events-list a:nth-child(3){
+    grid-column: 1/5;
+  } 
+  .next-events-list a:nth-child(2), .next-events-list a:nth-child(4){
+    grid-column: 5/9;
+  }
+  .previous-events-list a:nth-child(1), .previous-events-list a:nth-child(4){
+    grid-column: 1/5;
+  } 
+  .previous-events-list a:nth-child(2), .previous-events-list a:nth-child(5){
+    grid-column: 5/9;
+  }
+  .previous-events-list a:nth-child(3){
+    grid-column: 3/7;
+  }
 }
 
 /************** desktop styles **************/
@@ -305,5 +337,11 @@ h2:after{
 
   .contact-container{
     padding: 0 15%;
+  }
+
+  /**** event.html ****/
+  .events-list a img {
+    max-width: 100%;
+    padding: 0 10px;
   }
 }
